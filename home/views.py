@@ -11,6 +11,6 @@ def home(request):
 def initial(request):
     return HttpResponse('Hello, World!!')
 
-@login_required
+@login_required(login_url='/admin')
 def authorized(request):
     return render(request, 'home/authorized.html')
