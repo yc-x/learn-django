@@ -1,7 +1,8 @@
 {% extends 'base.html'%}
-
+<!--this name is to be recognized automatically by Django-->
 {% block content %}
-<form method="POST">
+<form method="POST">    
+    <!--Here as well, action link automatically recognized by Django-->
     {% csrf_token%}
     <!--CSRF stands for Cross-Site Request Forgery-->
     {{ form }}
